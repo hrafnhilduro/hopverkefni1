@@ -1,2 +1,2 @@
 # hopverkefni1
-Testing
+17.10 - opnuðum repo til að byrja á þessu verkefni 
