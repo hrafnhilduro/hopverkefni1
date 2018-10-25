@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vöruhúsið</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="../grid.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Karfa</h1>
+      <div class="header__menu">
+        <nav>
+          <ul class="header__tags">
+            <li class="header__tag"><a href="../index.html">forsíða</a></li>
+            <li class="header__tag"><a href="../products.html">vörur</a></li>
+            <li class="header__tag"><a href="../staff.html">starfsfólk</a></li>
+          </ul>
+        </nav>
+        <div class="header__chart">
+          <a href="../cart.html"><img src="../img/cart.svg" alt="Cart drawing"></a>
+          <a href="../cart.html">
+          <span>Karfa(3)</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="cart__row">
+        <div class="cart__col">
+        <h2>Vörur í körfu</h2>
+        </div>
+      </div>
+      <div class="cart__row">
+        <div class="cart__col1">
+          <div class="cart__img">
+          <img src="../img/watch.jpg " alt="Very expensive watch">
+          </div>
+        </div>
+        <div class="cart__col2">
+          <div class="cart__content">
+            <h2>Ótrúlegt úr</h2>
+            <div class="cart__text">
+            <p>Hvað er klukkan þetta úr mun svara því hvenær sem er.</p>
+          </div>
+            <div class="cart__price">
+            <h3>99.900 kr.-</h3>
+          </div>
+            <div class="cart__sale">
+              <label>
+              Fjöldi:
+            <input type="number">
+          </label>
+            <div class="cart__button">
+              <button>Uppfæra</button>
+          </div>
+            <div class="cart__button">
+            <button>Eyða úr körfu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart__col1">
+          <div class="cart__img">
+            <img src="../img/headphones.jpg" alt="Headphones">
+          </div>
+        </div>
+        <div class="cart__col2">
+          <div class="cart__content">
+            <h2>Hágæða heyrnartól</h2>
+            <div class="cart__text">
+            <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
+            </div>
+            <div>
+              <h3>39.999 kr.-</h3>
+            </div>
+            <div class="cart__sale">
+              <label>
+                Fjöldi:
+                <input type="number">
+              </label>
+              <div class="cart__button">
+                <button>Uppfæra</button>
+              </div>
+              <div class="cart__button">
+                <button>Eyða úr körfu</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="cart__information">
+        <div class="cart__info">
+          <h2>Sendingarupplýsingar</h2>
+          <div class="cart__fields">
+            <div class="cart__name">
+              <label>
+                Nafn:
+                <input type="text">
+              </label>
+            </div>
+            <div class="cart__address">
+              <label> Heimilisfang:
+                <input type="text">
+              </label>
+            </div>
+            <div class="cart__postnumber">
+              <label> Póstnúmer:
+                <select class="cart__post">
+                  <option value="">-Velja póstnúmer-</option>
+                  <option value="101">101</option>
+                  <option value="102">102</option>
+                  <option value="103">103</option>
+                  <option value="104">104</option>
+                  <option value="105">105</option>
+                  <option value="106">106</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="cart__info">
+          <h2>Greiðsluupplýsingar</h2>
+          <div class="cart__field">
+            <div class="cart__card">
+              <label> Kortanúmer:
+                <input type="text">
+              </label>
+            </div>
+            <div class="cart__cardname">
+              <label> Korthafi:
+                <input type="text">
+              </label>
+            </div>
+            <div class="cart__valid">
+              <div class="cart__date">
+                <div class="cart__month">
+                  <label> Mánuður.
+                    <select class="cart__select">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">03</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="cart__year">
+                  <label> Ár.
+                    <select class="cart__select">
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__row">
+        <div class="footer__col">
+          <section>
+            <h3>Vöruflokkar</h3>
+            <ul class="footer__tags">
+              <li class="footer__tag"><a href="#">Nauðsynjavörur</a></li>
+              <li class="footer__tag"><a href="#">Frábærar vörur</a></li>
+              <li class="footer__tag"><a href="#">Ómissandi vörur</a></li>
+              <li class="footer__tag"><a href="#">Ótrúlegar vörur</a></li>
+              <li class="footer__tag"><a href="#">Magnaðar vörur</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="footer__col">
+          <section>
+            <h3>Vöruflokkar</h3>
+            <ul class="footer__tags">
+              <li class="footer__tag"><a href="#">Trylltar vörur</a></li>
+              <li class="footer__tag"><a href="#">Geggjaðar vörur</a></li>
+              <li class="footer__tag"><a href="#">Svakalegar vörur</a></li>
+              <li class="footer__tag"><a href="#">Fáranlegar vörur</a></li>
+              <li class="footer__tag"><a href="#">Klikkaðar vörur</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="footer__col">
+          <section>
+            <h3>Vöruflokkar</h3>
+            <ul class="footer__tags">
+              <li class="footer__tag"><a href="#">Nýjar vörur</a></li>
+              <li class="footer__tag"><a href="#">Gamlar vörur</a></li>
+              <li class="footer__tag"><a href="#">Skrýtnar vörur</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="footer__col">
+          <section>
+          c<h3>Síður</h3>
+            <ul class="footer__tags">
+              <li class="footer__tag"><a href="#">Allar vörur</a></li>
+              <li class="footer__tag"><a href="#">Starfsfólk</a></li>
+              <li class="footer__tag"><a href="#">Karfa</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="footer__row">
+        <div class="footer__copy">
+          <span>&copy; 2018 Vöruhúsið</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
