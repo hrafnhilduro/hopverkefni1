@@ -1,0 +1,22 @@
+{
+  "name": "Hopverkefni 1",
+  "version": "1.0.0",
+  "description": "17.10 - opnuðum repo til að byrja á þessu verkefni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrafnhilduro/hopverkefni1.git"
+  },
+  "author": "Hrafnhilduro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrafnhilduro/hopverkefni1/issues"
+  },
+  "homepage": "https://github.com/hrafnhilduro/hopverkefni1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}
