@@ -1,0 +1,78 @@
+@import 'config';
+
+.front {
+  width: 100%;
+  max-width: $max-width;
+
+  margin: $gutter * 4 auto;
+
+  @media (min-width: $max-width / 2) {
+    margin: $gutter * 5 auto;
+  }
+
+  @media (min-width: $max-width) {
+    margin: $gutter * 10 auto;
+  }
+
+&__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -($gutter / 2);
+  margin-left: -($gutter / 2);
+
+  // brotapunktur útfrá því hvar þetta verður skrítið
+  @media (min-width: 800px) {
+    flex-wrap: nowrap;
+  }
+}
+
+&__list {
+  @include columns(12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin-bottom: $gutter * 2;
+
+  list-style: none;
+
+  @media (min-width: 800px) {
+    margin-bottom: 0;
+  }
+}
+
+&__item {
+  position: relative;
+  margin-bottom: $gutter * 2;
+  padding-left: 40px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background: transparent url(check.svg) no-repeat;
+    background-size: 32px 32px;
+  }
+
+  h2 {
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: $font-main;
+    font-size: 1rem;
+  }
+}
+
+&__image {
+  @include columns(12);
+}
+}
+
+@import 'button'

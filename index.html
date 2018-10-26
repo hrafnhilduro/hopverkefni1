@@ -16,47 +16,68 @@
           <div class="header__col">
             <nav class="header__nav">
               <ul class="header__list">
-                <li class="header__item"><a href="index.html" class=header_link>Forsíða</a></li>
-                <li class="header__item"><a href="pages/products.html" class=header_link>Vörur</a></li>
-                <li class="header__item"><a href="pages/staff.html" class=header_link>Starfsfólk</a></li>
+                <div class="header__list__center">
+                  <li class="header__item"><a href="index.html" class=header_link>Forsíða</a></li>
+                  <li class="header__item"><a href="pages/products.html" class=header_link>Vörur</a></li>
+                  <li class="header__item"><a href="pages/staff.html" class=header_link>Starfsfólk</a></li>
+                </div>
+                <div class="header__list__right">
+                  <li class="header__item header__item--button"><a href="pages/cart.html">Karfa(3)</a></li>
+                </div>
               </ul>
             </nav>
           </div>
-          <div class="header__col">
+          <!--<div class="header__col">
             <nav class="header__nav">
               <ul class="header_list">
                 <li class="header__item header__item--button"><a href="pages/cart.html">Karfa(3)</a></li>
               </ul>
             </nav>
-          </div>
+          </div>-->
         </div>
       </div>
     </header>
     <main>
 
-      <section class="all_products">
-        <div class="all_products_content">
-          <h2 class="all_products_title">Allar vörurnar</h2>
-          <p class="all_products_text">Vöruhúsið hefur allar þær vörur sem þig vantar.</p>
-          <div class="all_products_button">
-            <a href="pages/products.html" class="button button--large">Skoða vörur</a>
+      <section class="front">
+        <div class="front__row">
+          <ul class="front__list">
+            <li class="front__item">
+              <h2 class="front__title">Allar vörurnar</h2>
+            </li>
+            <li class="front__item">
+              <p class="front__text">Vöruhúsið hefur allar þær vörur sem þig vantar.</p>
+            </li>
+            <li class="front__item">
+              <div class="front__button">
+                <a href="pages/products.html" class="button button--large">Skoða vörur</a>
+              </div>
+            </li>
+          </ul>
+          <div class="front__image">
+            <img class="front__image" src="img/products.jpg" alt="">
           </div>
-        </div>
-        <div class="all_products_image">
-          <img class="all_products_image" src="img/products.jpg" alt="">
         </div>
       </section>
 
-      <section class="about_staff">
-        <div class="all_products_image">
-          <img class="about_staff_image" src="img/team.jpg" alt="">
-        </div>
-        <div class="all_products_content">
-          <h2 class="all_products_title">Besta starfsfólkið</h2>
-          <p class="all_products_text">Starfsfólkið okkar hugsar vel um þig.</p>
-          <div class="all_products_button">
-            <a href="pages/staff.html" class="button button--large">Kynnast starfsfólki</a>
+      <section class="front">
+        <div class="front__row">
+          <div class="front__image">
+            <img class="front__image" src="img/team.jpg" alt="">
           </div>
+          <ul class="front__list">
+            <li class="front__item">
+              <h2 class="front__title">Besta Starfsólkið</h2>
+            </li>
+            <li class="front__item">
+              <p class="front__text">Starfsfólkið okkar hugsar vel um þig.</p>
+            </li>
+            <li class="front__item">
+              <div class="front__button">
+                <a href="pages/products.html" class="button button--large">Kynnast starfsfólki</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
