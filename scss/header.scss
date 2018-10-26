@@ -1,43 +1,54 @@
 .header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 10;
 
-  padding: 5px 0;
   width: 100%;
 
-  color: #000000;
-  background-color: #afb281;
+  &__content {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
 
-  padding-left: $gutter;
-  padding-right: $gutter;
+    padding: $gutter;
 
-  &_content {
-    max-width: $max-width;
-    margin: 0 auto;
+    color: #000000;
+    background-color: #afb281;
   }
 
-  &_row{
-    display: flex;
-    margin-right: -($gutter / 2);
-    margin-left: -($gutter / 2);
-  }
+  &__title{
 
-  &_title{
-
-
-    justify-content: center;
+    text-align: center;
     font-family: $font-heading;
     font-size: 2rem;
 
   }
 
-  &_nav{
+  &__row{
+    display: flex;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__col {
+    @include columns(4);
+
+    text-align: center;
+
+    @media (min-width: $max-width / 2) {
+      @include columns(3);
+
+      &:first-child {
+        margin-left: (3/12*100) * 1%;
+      }
+    }
+  }
+
+  &__nav{
     display: flex;
   }
 
-  &_list{
+  &__list{
     display: flex;
     justify-content: center;
     a {
@@ -46,12 +57,19 @@
     }
   }
 
-  &_item{
+  &__item{
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
     font-size: 1rem;
 
     &--button{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 10px;
+      font-size: 1rem;
 
     }
 
