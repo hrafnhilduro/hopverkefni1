@@ -22,7 +22,7 @@
   &__col{
     @include columns(6);
 
-    text-align: center;
+    text-align: left;
 
     @media (min-width: $max-width / 2){
       @include columns(2);
