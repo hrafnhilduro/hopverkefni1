@@ -6,14 +6,19 @@
 
   width: 100%;
 
+  color: #000000;
+  background-color: #afb281;
+
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  @media (min-width: $max-width) {
+    padding: 10px;
+  }
+
   &__content {
-    margin-left: -$gutter;
-    margin-right: -$gutter;
-
-    padding: $gutter;
-
-    color: #000000;
-    background-color: #afb281;
+    max-width: $max-width;
+    margin: 0 auto;
   }
 
   &__title{
@@ -26,59 +31,65 @@
 
   &__row{
     display: flex;
-    max-width: $max-width;
-    margin: 0 auto;
+    margin-right: -($gutter / 2);
+    margin-left: -($gutter / 2);
   }
 
-  &__col {
-    @include columns(4);
-
-    text-align: center;
-
-    @media (min-width: $max-width / 2) {
-      @include columns(2);
-
-      &:first-child {
-        margin-left: (4/12*100) * 1%;
-      }
-
-    }
-  }
 
   &__nav{
+    @include columns(7);
+    padding-right: $gutter / 2;
+    padding-left: $gutter / 2;
+
     display: flex;
   }
 
   &__list{
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    list-style: none;
+
     a {
+      font-family: $font-main;
       text-decoration: none;
       color: #000000;
-    }
-
-    &__center{
-      justify-content: center;
-    }
-    &__right {
-      justify-content: flex-end;
-    }
-  }
-
-  &__item{
-    display: flex;
-    margin: 10px;
-    font-size: 1rem;
-    a {
-      text-decoration: none;
-      color: #000000;
-    }
-
-    &__button{
       margin: 10px;
-      font-size: 1rem;
-
     }
+  }
+
+  &__cart {
+    @include columns(1);
+    padding-right: $gutter / 2;
+    padding-left: $gutter / 2;
+
+    font-family: $font-main;
+    font-size: 1rem;
+
+    text-decoration: none;
+    color: #000000;
+    margin: 10px;
 
   }
+
+
+  &__item {
+    display: flex;
+
+    font-size: 1rem;
+
+    &--button {
+      display: flex;
+      text-align: right;
+      padding-left: $gutter;
+
+      @media (min-width: 500px) {
+        display: flex;
+      }
+    }
+  }
+
 
 }
