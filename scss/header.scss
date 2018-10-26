@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  padding: 0;
+  width: 100%;
+
+  color: #000000;
+  background-color: #afb281;
+
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  &_content {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &_row{
+    display: flex;
+  }
+
+  &_title{
+
+  }
+
+  &_nav{
+
+  }
+
+  &_list{
+
+  }
+
+  &_item{
+    display: flex;
+
+    font-size: 1rem;
+
+    &--button{
+      
+    }
+
+  }
+
+}

@@ -16,8 +16,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "browser-sync": "browser-sync start --server --files index.html styles.css",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
-    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
-    "dev": "npm-run-all --parallel sass browser-sync sass-watch",
+    "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
+    "dev": "npm-run-all --parallel sass sass-watch browser-sync",
     "lint-css": "stylelint styles.css --syntax css",
     "lint-scss": "stylelint styles.scss --syntax scss"
   },
