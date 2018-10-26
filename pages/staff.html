@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
-    <header>
-      <h1>Starfsfólk</h1>
-      <div class="links__grid">
-        <ul class="links__head">
-          <li><a href="../index.html">Forsíða</a></li>
-          <li><a href="products.html">Vörur</a></li>
-          <li><a href="staff.html"><u>Starfsfólk</u></a>
-        </li>
-        </ul>
-        <ul class="header__cart">
-          <img class="cart__img" src="../img/cart.svg" alt="Cart drawing">
-          <li><a href="cart.html">Karfa (3)</a></li>
-        </ul>
+    <header class="header">
+      <div class="header_content">
+        <div class="header_row">
+          <h1 class="header_title">Starfsólk</h1>
+          <nav class="header_nav">
+            <ul class="header_list">
+              <li class="header_item"><a href="index.html" class=header_link>Forsíða</a></li>
+              <li class="header_item"><a href="pages/products.html" class=header_link>Vörur</a></li>
+              <li class="header_item"><a href="pages/staff.html" class=header_link>Starfsfólk</a></li>
+              <li class="header_item header_item--button"><a href="pages/cart.html">Karfa(3)</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -77,44 +77,47 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="footer__row">
-        <div class="footer__col">
-          <h3>Vöruflokkar</h3>
-          <ul>
-            <li><a href="products.html">Nauðsynjavörur</a></li>
-            <li><a href="products.html">Frábærar vörur</a></li>
-            <li><a href="products.html">Ómissandi vörur</a></li>
-            <li><a href="products.html">Ótrúlegar vörur</a></li>
-            <li><a href="products.html">Magnaðar vörur</a></li>
-          </ul>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__row">
+          <div class="footer__col">
+            <h3>Vöruflokkar</h3>
+            <ul class="footer__list">
+              <li><a href="products.html"class="footer__link">Nauðsynjavörur</a></li>
+              <li><a href="products.html" class="footer__link">Frábærar vörur</a></li>
+              <li><a href="products.html" class="footer__link">Ómissandi vörur</a></li>
+              <li><a href="products.html" class="footer__link">Ótrúlegar vörur</a></li>
+              <li><a href="products.html" class="footer__link">Magnaðar vörur</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Vöruflokkar</h3>
+            <ul class="footer__list">
+              <li><a href="products.html" class="footer__link">Trylltar vörur</a></li>
+              <li><a href="products.html" class="footer__link">Geggjaðar vörur</a></li>
+              <li><a href="products.html" class="footer__link">Svakalegar vörur</a></li>
+              <li><a href="products.html" class="footer__link">Fáránlegar vörur</a></li>
+              <li><a href="products.html" class="footer__link">Klikkaðar vörur</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Vöruflokkar</h3>
+            <ul class="footer__list">
+              <li><a href="products.html" class="footer__link">Nýjar vörur</a></li>
+              <li><a href="products.html" class="footer__link">Gamlar vörur</a></li>
+              <li><a href="products.html" class="footer__link">Skrítnar vörur</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Síður</h3>
+            <ul class="footer__list">
+              <li><a href="products.html" class="footer__link">Allar vörur</a></li>
+              <li><a href="staff.html" class="footer__link">Starfsfólk</a></li>
+              <li><a href="cart.html" class="footer__link">Karfa</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__col">
-          <h3>Vöruflokkar</h3>
-          <ul>
-          <li><a href="products.html">Trylltar vörur</a></li>
-          <li><a href="products.html">Geggjaðar vörur</a></li>
-          <li><a href="products.html">Svakalegar vörur</a></li>
-          <li><a href="products.html">Fáránlegar vörur</a></li>
-          <li><a href="products.html">Klikkaðar vörur</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>Vöruflokkar</h3>
-          <ul>
-          <li><a href="products.html">Nýjar vörur</a></li>
-          <li><a href="products.html">Gamlar vörur</a></li>
-          <li><a href="products.html">Skrítnar vörur</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>Síður</h3>
-          <ul>
-          <li><a href="products.html">Allar vörur</a></li>
-          <li><a href="staff.html">Starfsfólk</a></li>
-          <li><a href="cart.html">Karfa</a></li>
-          </ul>
-        </div>
+        <p class="footer__copyright">© 2018 Vöruhúsið</p>
       </div>
     </footer>
   </body>

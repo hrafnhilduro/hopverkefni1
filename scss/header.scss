@@ -4,7 +4,7 @@
   left: 0;
   z-index: 10;
 
-  padding: 0;
+  padding: 5px 0;
   width: 100%;
 
   color: #000000;
@@ -20,18 +20,30 @@
 
   &_row{
     display: flex;
+    margin-right: -($gutter / 2);
+    margin-left: -($gutter / 2);
   }
 
   &_title{
 
+
+    justify-content: center;
+    font-family: $font-heading;
+    font-size: 2rem;
+
   }
 
   &_nav{
-
+    display: flex;
   }
 
   &_list{
-
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
   }
 
   &_item{
@@ -40,7 +52,7 @@
     font-size: 1rem;
 
     &--button{
-      
+
     }
 
   }
