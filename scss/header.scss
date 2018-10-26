@@ -20,7 +20,7 @@
 
     text-align: center;
     font-family: $font-heading;
-    font-size: 2rem;
+    font-size: 3rem;
 
   }
 
@@ -31,16 +31,17 @@
   }
 
   &__col {
-    @include columns(6);
+    @include columns(4);
 
     text-align: center;
 
     @media (min-width: $max-width / 2) {
-      @include columns(3);
+      @include columns(2);
 
       &:first-child {
-        margin-left: (3/12*100) * 1%;
+        margin-left: (4/12*100) * 1%;
       }
+
     }
   }
 
@@ -67,6 +68,10 @@
     display: flex;
     margin: 10px;
     font-size: 1rem;
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
 
     &__button{
       margin: 10px;
