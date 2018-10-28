@@ -5,7 +5,7 @@ Nemendur:
 
 > *Sunna Karítas Rúnarsdóttir*
 
-> *Viktoría Emma*
+> *Viktoría Emma Berglindardóttir*
 
 Til þess að ná í verkefnið þarf að gera:
 
