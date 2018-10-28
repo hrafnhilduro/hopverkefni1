@@ -1,7 +1,7 @@
 # hopverkefni1
 
 Nemendur:
-> *Hrafnhildur Olga Hjaltadóttir, Sunna Karítas Rúnarsdóttir*
+> *Hrafnhildur Olga Hjaltadóttir, Sunna Karítas Rúnarsdóttir og Viktoría Emma
 
 Til þess að ná í verkefnið þarf að gera:
 
