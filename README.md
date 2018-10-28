@@ -1,6 +1,20 @@
 # hopverkefni1
-17.10 - opnuðum repo til að byrja á þessu verkefni 
 
-25.10 - henti inn nauðsynlegu drasli 
+Nemendur:
+> *Hrafnhildur Olga Hjaltadóttir, Sunna Karítas Rúnarsdóttir*
 
-25.10 - Setti upp package json og npm browser sync og .gitignore til að passa uppá node modules
+Til þess að ná í verkefnið þarf að gera:
+
+```sh
+git clone 'link fyrir verkefnið'
+```
+
+Til þess að keyra verkefnið þarf að gera:
+
+```sh
+cd hopverkeni1
+npm install
+npm run dev
+```
+
+
