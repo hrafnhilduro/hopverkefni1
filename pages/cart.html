@@ -18,9 +18,9 @@
           <div class="header__col">
             <nav class="header__nav">
               <ul class="header__list">
-                <li class="header__item"><a href="../index.html" class=header_link>Forsíða</a></li>
-                <li class="header__item"><a href="products.html" class=header_link>Vörur</a></li>
-                <li class="header__item"><a href="staff.html" class=header_link>Starfsfólk</a></li>
+                <li class="header__item"><a href="../index.html" class="header_link">Forsíða</a></li>
+                <li class="header__item"><a href="products.html" class="header_link">Vörur</a></li>
+                <li class="header__item"><a href="staff.html" class="header_link">Starfsfólk</a></li>
               </ul>
             </nav>
           </div>
@@ -40,6 +40,7 @@
         <h2>Vörur í körfu</h2>
         </div>
       </div>
+    </section>
       <div class="cart__row">
         <div class="cart__col1">
           <div class="cart__img">
@@ -98,24 +99,32 @@
         </div>
       </div>
     </div>
-      <div class="cart__information">
-        <div class="cart__info">
-          <h2>Sendingarupplýsingar</h2>
-          <div class="cart__fields">
-            <div class="cart__name">
-              <label>
-                Nafn:
-                <input type="text">
-              </label>
+
+    <form class="form" method="get" action="cart.html">
+      <div class="form__row">
+        <div class="form__col">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Sendingarupplýsingar</legend>
+
+            <div class="form__field">
+              <div class="field">
+                <label class="field_label" for="name">Nafn:</label>
+                <input class="field__input" type="text" id="name">
+              </div>
             </div>
-            <div class="cart__address">
-              <label> Heimilisfang:
-                <input type="text">
-              </label>
+
+            <div class="form__field">
+              <div class="field">
+                <label class="field_label" for="home">Heimilisfang:</label>
+                <input class="field__input" type="text" id="home">
+              </div>
             </div>
-            <div class="cart__postnumber">
-              <label> Póstnúmer:
-                <select class="cart__post">
+
+            <div class="form__field">
+              <div class="field field--postcode">
+                <div class="field__content">
+                  <label class="field__label" for="postcode">Póstnúmer</label>
+                <select id="postcode" class="field_select">
                   <option value="">-Velja póstnúmer-</option>
                   <option value="101">101</option>
                   <option value="102">102</option>
@@ -124,69 +133,76 @@
                   <option value="105">105</option>
                   <option value="106">106</option>
                 </select>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="cart__info">
-          <h2>Greiðsluupplýsingar</h2>
-          <div class="cart__field">
-            <div class="cart__card">
-              <label> Kortanúmer:
-                <input type="text">
-              </label>
-            </div>
-            <div class="cart__cardname">
-              <label> Korthafi:
-                <input type="text">
-              </label>
-            </div>
-            <div class="cart__valid">
-              <div class="cart__date">
-                <div class="cart__month">
-                  <label> Mánuður.
-                    <select class="cart__select">
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">03</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="cart__year">
-                  <label> Ár.
-                    <select class="cart__select">
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    </select>
-                  </label>
-                </div>
               </div>
             </div>
           </div>
-        </div>
+        </fieldset>
       </div>
-    </section>
+      <div class="form_col">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Greiðsluupplýsingar</legend>
 
+          <div class="form__field">
+            <div class="field">
+              <label class="field_label" for="cardnumber">Kortanúmer:</label>
+              <input class="field__input" type="text" id="cardnumber">
+            </div>
+          </div>
+
+          <div class="form__field">
+            <div class="field">
+              <label class="field_label" for="cardholder">Korthafi:</label>
+              <input class="field__input" type="text" id="cardholder">
+            </div>
+          </div>
+
+          <div class="form__field">
+                <div class="field field--expiry">
+                  <div class="field__label">Gildistími:</div>
+                  <div class="field__content">
+                    <label class="field__label" for="cardmon">Mán</label>
+                    <select id="cardmon" class="field__select">
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+
+                    <label class="field__label" for="cardyear">Ár</label>
+                    <select id="cardyear" class="field__select">
+                      <option>2018</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                      <option>2021</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+        <div class="form_submit">
+          <button class="button">Kaupa</button>
+        </div>
+      </form>
   </main>
+
   <footer class="footer">
     <div class="footer__content">
       <div class="footer__row">
         <div class="footer__col">
           <h3>Vöruflokkar</h3>
           <ul class="footer__list">
-            <li><a href="products.html"class="footer__link">Nauðsynjavörur</a></li>
+            <li><a href="products.html" class="footer__link">Nauðsynjavörur</a></li>
             <li><a href="products.html" class="footer__link">Frábærar vörur</a></li>
             <li><a href="products.html" class="footer__link">Ómissandi vörur</a></li>
             <li><a href="products.html" class="footer__link">Ótrúlegar vörur</a></li>
