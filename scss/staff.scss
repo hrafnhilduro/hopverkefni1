@@ -1,0 +1,70 @@
+@import 'config';
+
+.staff {
+  position: relative;
+  margin: 10px;
+}
+
+&__row {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+&__col {
+  width: 100%;
+  padding: 10px;
+  @media (min-width: 700px) {
+    width: 50%;
+  }
+
+  &__card {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s linear;
+    transform-style: preserve-3d;
+  }
+
+  &:hover .staff__card {
+    transform: rotateY(180deg);
+  }
+
+  .front {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+
+  .karolina {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .back {
+    display: block;
+    transform: rotateY(180deg);
+  }
+
+  .tomas {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .anna {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .jon {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
