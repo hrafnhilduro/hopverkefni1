@@ -16,7 +16,7 @@ git clone 'link fyrir verkefnið'
 Til þess að keyra verkefnið þarf að gera:
 
 ```sh
-cd hopverkeni1
+cd hopverkefni1
 npm install
 npm run dev
 ```
